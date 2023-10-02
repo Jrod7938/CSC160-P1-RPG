@@ -5,12 +5,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public Rigidbody2D rb;
+
     public float moveSpeed = 5.0F;
+
     public Animator myAnim;
-    
+
+    public static PlayerController instance;
+
     // Start is called before the first frame update
     void Start() {
-        
+        // Prevent multiple player instances
+        if (instance == null)
+        {
+            instance = this;
+        } else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
