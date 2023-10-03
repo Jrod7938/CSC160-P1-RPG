@@ -20,7 +20,8 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = PlayerController.instance.transform;
+        //target = PlayerController.instance.transform;
+        target = FindAnyObjectByType<PlayerController>().transform;
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;

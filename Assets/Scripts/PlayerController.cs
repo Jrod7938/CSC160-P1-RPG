@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public Rigidbody2D rb;
-
     public float moveSpeed = 5.0F;
 
     public Animator myAnim;
@@ -13,9 +12,7 @@ public class PlayerController : MonoBehaviour {
     public static PlayerController instance;
 
     public string areaTransitionName;
-
     private Vector3 bottomLeftLimit;
-
     private Vector3 topRightLimit;
 
     // Start is called before the first frame update
@@ -26,7 +23,11 @@ public class PlayerController : MonoBehaviour {
             instance = this;
         } else
         {
-            Destroy(gameObject);
+            if(instance != this)
+            {
+                Destroy(gameObject);
+            }
+           
         }
 
         DontDestroyOnLoad(gameObject);
