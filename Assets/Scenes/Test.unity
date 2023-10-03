@@ -345,7 +345,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2012856817
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1063947860, guid: 6d24b13d8f8994f42913364806a750e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -449,6 +449,7 @@ MonoBehaviour:
   rb: {fileID: 1089172517}
   moveSpeed: 5
   myAnim: {fileID: 1089172520}
+  areaTransitionName: 
 --- !u!95 &1089172520
 Animator:
   serializedVersion: 5
@@ -572,19 +573,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1882580509500327203, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_Name
-      value: AreaExit
+      value: Area Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343189871423804054, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
+      propertyPath: transitionName
+      value: Countryside-1
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.45
+      value: 9.13
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.975373
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalRotation.w

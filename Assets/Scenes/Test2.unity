@@ -178,8 +178,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 259271637
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ac1b134abac16df4e8cbb927369f7b17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 218273297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,7 +309,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1882580509500327203, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_Name
-      value: AreaExit
+      value: Area Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343189871423804054, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
+      propertyPath: transitionName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.975373
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5330117657886886268, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -354,6 +358,14 @@ PrefabInstance:
     - target: {fileID: 6954719535965437076, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: areaToLoad
       value: Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954719535965437076, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
+      propertyPath: areaTransitionName
+      value: Countryside-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382491371704374400, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
