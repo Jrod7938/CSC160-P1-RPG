@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour {
 
     public string areaTransitionName;
 
+    private Vector3 bottomLeftLimit;
+
+    private Vector3 topRightLimit;
+
     // Start is called before the first frame update
     void Start() {
         // Prevent multiple player instances
@@ -39,6 +43,15 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1) {
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
-        } 
+        }
+
+        // Keep Player Inside Bounds
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+    }
+
+    public void SetBounds(Vector3 botLeft, Vector3 topRight)
+    {
+        bottomLeftLimit = botLeft + new Vector3(.5f, .5f, 0f);
+        topRightLimit = topRight + new Vector3(-.5f, -.5f, 0f);
     }
 }
