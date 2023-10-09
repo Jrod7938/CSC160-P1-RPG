@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour {
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
 
+    public bool canMove = true;
+
     // Start is called before the first frame update
     void Start() {
         // Prevent multiple player instances
@@ -35,15 +37,23 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+        if (canMove) {
+            rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+
+            
+        } else {
+            rb.velocity = Vector2.zero;
+        }
 
         // Animator
         myAnim.SetFloat("moveX", rb.velocity.x);
         myAnim.SetFloat("moveY", rb.velocity.y);
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1) {
-            myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            if (canMove) {
+                myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+                myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
         }
 
         // Keep Player Inside Bounds
