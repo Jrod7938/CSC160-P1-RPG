@@ -23391,6 +23391,10 @@ PrefabInstance:
       propertyPath: charName
       value: Billy
       objectReference: {fileID: 0}
+    - target: {fileID: 1247989293773999422, guid: b2f1d81730a494d8e89e4271424e8310, type: 3}
+      propertyPath: charImage
+      value: 
+      objectReference: {fileID: -1063947860, guid: 6d24b13d8f8994f42913364806a750e9, type: 3}
     - target: {fileID: 2575909757577196655, guid: b2f1d81730a494d8e89e4271424e8310, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5

@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8992c7ae64042401fa713321be3f3210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Tim
+  charName: Billy
   playerLevel: 1
-  currentEXP: 0
+  currentEXP: 250
   maxLevel: 10
   baseEXP: 1000
   expToNextLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -123,7 +123,7 @@ MonoBehaviour:
   armorPower: 0
   equippedWeapon: 
   equippedArmor: 
-  charImage: {fileID: 0}
+  charImage: {fileID: -1063947860, guid: 6d24b13d8f8994f42913364806a750e9, type: 3}
 --- !u!1 &5929271986968012263
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +175,9 @@ MonoBehaviour:
   - {fileID: 1247989293773999422}
   - {fileID: 7329628692623954310}
   - {fileID: 630080414079437095}
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenAreas: 0
 --- !u!1 &8681254600557295379
 GameObject:
   m_ObjectHideFlags: 0
