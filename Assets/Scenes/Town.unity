@@ -370,7 +370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 76862724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 217939701}
+        m_TargetAssemblyTypeName: GameMenu, Assembly-CSharp
+        m_MethodName: StatusChar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &76862724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1419,17 @@ MonoBehaviour:
   - {fileID: 2087516153}
   - {fileID: 76862721}
   - {fileID: 1723854399}
+  statusName: {fileID: 883682517}
+  statusHP: {fileID: 1229387764}
+  statusMP: {fileID: 206204319}
+  statusStrength: {fileID: 386376143}
+  statusDefense: {fileID: 1531239053}
+  statusWpnEqpd: {fileID: 114848310}
+  statusWpnPwr: {fileID: 93571258}
+  statusArmEqpd: {fileID: 1194424275}
+  statusArmPwr: {fileID: 902631839}
+  statusExp: {fileID: 1398411854}
+  statusImage: {fileID: 1304275492}
 --- !u!1 &270146520
 GameObject:
   m_ObjectHideFlags: 0
@@ -24238,7 +24261,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1723854402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 217939701}
+        m_TargetAssemblyTypeName: GameMenu, Assembly-CSharp
+        m_MethodName: StatusChar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1723854402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25742,7 +25777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2087516156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 217939701}
+        m_TargetAssemblyTypeName: GameMenu, Assembly-CSharp
+        m_MethodName: StatusChar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2087516156
 MonoBehaviour:
   m_ObjectHideFlags: 0
