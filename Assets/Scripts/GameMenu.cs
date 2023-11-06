@@ -43,6 +43,8 @@ public class GameMenu : MonoBehaviour {
         statusArmPwr,
         statusExp;
 
+    public Text goldText;
+
     public Image statusImage;
 
     public ItemButton[] itemButtons;
@@ -90,6 +92,8 @@ public class GameMenu : MonoBehaviour {
                 charStatHolder[i].SetActive(false);
             }
         }
+
+        goldText.text = GameManager.instance.currentGold.ToString() + "g";
     }
 
     public void ToggleWindow(int windowNumber) {
