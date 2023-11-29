@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Countryside.unity
     guid: eb4e2e552e7ae4dd39f80df1d2170310
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 0a57741a26c5e46739d52d695ee27482
   m_configObjects: {}

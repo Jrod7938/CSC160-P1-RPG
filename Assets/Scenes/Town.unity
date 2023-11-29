@@ -18872,6 +18872,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 350705155266469644, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
+      propertyPath: m_Name
+      value: Area Entrance Shop
+      objectReference: {fileID: 0}
     - target: {fileID: 1260219629225677378, guid: 5ba879dce3c924ac4bbe0bf840a838eb, type: 3}
       propertyPath: m_Size.x
       value: 3.4603052

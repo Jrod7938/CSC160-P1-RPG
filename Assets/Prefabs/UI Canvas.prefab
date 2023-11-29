@@ -19625,7 +19625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 173.00977, y: -2.5881348}
+  m_AnchoredPosition: {x: 173.00977, y: -2.5881042}
   m_SizeDelta: {x: -429.9805, y: -79.2597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6555628641946299296
@@ -48294,6 +48294,13 @@ MonoBehaviour:
   - {fileID: 6621307893027190967}
   - {fileID: 3543644864162544109}
   - {fileID: 4488189403058157890}
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 5611013845140577866}
+  buyItemDescription: {fileID: 7009377981464480167}
+  buyItemValue: {fileID: 2231689083981832097}
+  sellItemName: {fileID: 6279001140760195241}
+  sellItemDescription: {fileID: 56543114433608082}
+  sellItemValue: {fileID: 5137971260472197033}
 --- !u!1 &6288823549452607785
 GameObject:
   m_ObjectHideFlags: 0
