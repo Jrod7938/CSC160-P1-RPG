@@ -224,7 +224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &320726738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8038,6 +8038,9 @@ MonoBehaviour:
   - n- Billy
   - Oh shoot! Don't worry, I'll save them!
   isPerson: 1
+  shouldActivateQuest: 1
+  questToMark: quest test
+  markComplete: 1
 --- !u!1 &1612993540
 GameObject:
   m_ObjectHideFlags: 0
@@ -8071,6 +8074,9 @@ MonoBehaviour:
   lines:
   - Welcome to Town!
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1612993542
 BoxCollider2D:
   m_ObjectHideFlags: 0
